@@ -20,3 +20,8 @@ provider "azurerm" {
   features {}
   skip_provider_registration = true
 }
+
+resource "azurerm_resource_group" "this" {
+  name     = "github-terraform-test-rg"
+  location = "East US"
+}
