@@ -22,6 +22,6 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "this" {
-  name     = "github-terraform-test-rg"
+  name     = "github-terraform-rg"
   location = "East US"
 }
