@@ -8,10 +8,10 @@ terraform {
   }
 
   cloud {
-    organization = "advanced-terraform-almirb40"
+    organization = env.TERRA_ORG
 
     workspaces {
-      name = "advanced-terraform"
+      name = env.TERRA_WORKSPACE
     }
   }
 }
