@@ -8,10 +8,10 @@ terraform {
   }
 
   cloud {
-    organization = env.TERRA_ORG
+    organization = var.organization
 
     workspaces {
-      name = env.TERRA_WORKSPACE
+      name = var.workspace
     }
   }
 }
