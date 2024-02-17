@@ -2,6 +2,13 @@ name: 'Terraform destroy'
 
 on:
   workflow_dispatch:
+    inputs:
+      name:
+        type: choice
+        description: Plan Destroy or Apply Destroy
+        options:
+        - Plan Destroy
+        - Apply Destroy
 
 permissions:
   contents: read
