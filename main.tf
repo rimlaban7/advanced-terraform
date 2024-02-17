@@ -8,10 +8,10 @@ terraform {
   }
 
   cloud {
-    organization = var.TF_CLOUD_ORGANIZATION
+    organization = "advanced-terraform-almirb40"
 
     workspaces {
-      name = VAR.TF_WORKSPACE
+      name = "advanced-terraform"
     }
   }
 }
