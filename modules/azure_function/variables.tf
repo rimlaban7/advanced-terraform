@@ -28,12 +28,12 @@ variable "account_replication_type" {
     default = "LRS"
 }
 
-variable "sku_tier" {
+variable "os_type" {
     type = string
-    default = "Dynamic"
+    default = "Linux"
 }
 
-variable "sku_size" {
+variable "sku_name" {
     type = string
     default = "Y1"
 }
