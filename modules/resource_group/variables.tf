@@ -4,5 +4,4 @@ variable "name" {
 
 variable "location" {
   type = string
-  default = "EastUS"
 }

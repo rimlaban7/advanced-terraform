@@ -14,10 +14,6 @@ variable "storage_account_name" {
   type = string
 }
 
-variable "storage_account_access_key" {
-  type = string
-}
-
 variable "app_service_plan_id" {
   type = string
 }
@@ -45,4 +41,9 @@ variable "sku_size" {
 variable "app_settings_run_time" {
     type = string
     default = "dotnet"
+}
+
+variable "app_service_plan_kind" {
+  type = string
+  default = "FunctionApp"
 }
