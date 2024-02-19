@@ -4,6 +4,15 @@ resource "azurerm_storage_account" "storage_account" {
   location                 = var.location
   account_tier             = var.account_tier
   account_replication_type = var.account_replication_type
+
+module "storage_account" {
+  source = "./modules/storage_account"
+
+  resource_group_name = var.resource_group_name
+  location = var.location
+  name_prefix = var.storage_prefix
+  environment = var.environment
+
 }
 
 resource "azurerm_service_plan" "app_service_plan" {

@@ -8,9 +8,9 @@ variable "rg_location" {
   default = "East Us"
 }
 
-variable "storage_account_name" {
+variable "storage_account_prefix" {
     type = string
-    default = "terracloudgithubrg"
+    default = "terracloudgithub"
 }
 
 variable "function_name" {
@@ -21,4 +21,9 @@ variable "function_name" {
 variable "app_service_plan_id" {
   type = string
   default = "app_service_plan_id"
+}
+
+variable "environment" {
+  type = string
+  default = "dev"
 }

@@ -32,6 +32,7 @@ module "azure_function" {
   name                = var.function_name
   location            = module.resource_group.location
   resource_group_name = module.resource_group.name
-  storage_account_name = var.storage_account_name
-  app_service_plan_id       = var.app_service_plan_id # will be set dynamically after apply
+  storage_prefix      = var.storage_account_prefix
+  app_service_plan_id = var.app_service_plan_id # will be set dynamically after apply
+  environment = var.environment 
 }
