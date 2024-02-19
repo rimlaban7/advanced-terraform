@@ -23,9 +23,9 @@ resource "azurerm_function_app" "function_app" {
   name                      = var.name
   location                  = var.location
   resource_group_name       = var.resource_group_name
-  app_service_plan_id       = azurerm_app_service_plan.this.id
-  storage_account_name      = azurerm_storage_account.this.name
-  storage_account_access_key = azurerm_storage_account.this.primary_access_key
+  app_service_plan_id       = azurerm_app_service_plan.app_service_plan.id
+  storage_account_name      = azurerm_storage_account.storage_account.name
+  storage_account_access_key = azurerm_storage_account.storage_account.primary_access_key
 
   app_settings = {
     FUNCTIONS_WORKER_RUNTIME = var.app_settings_run_time
