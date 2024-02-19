@@ -15,7 +15,7 @@ variable "storage_account_name" {
 
 variable "function_name" {
     type = string
-    default = "terra_cloud_github_actions_function"
+    default = "terra-cloud-github-actions-function"
 }
 
 variable "app_service_plan_id" {
