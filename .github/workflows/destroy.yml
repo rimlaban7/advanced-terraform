@@ -3,12 +3,10 @@ name: 'Terraform destroy'
 on:
   workflow_dispatch:
     inputs:
-      name:
-        type: choice
-        description: Plan Destroy or Apply Destroy
-        options:
-        - Plan Destroy
-        - Apply Destroy
+      perform_apply_destroy:
+        type: boolean
+        description: Destroy Resources
+      
 
 permissions:
   contents: read
@@ -37,3 +35,7 @@ jobs:
 
     - name: Terraform Plan Destroy
       run: terraform plan -destroy
+
+      if: ${{ inputs.perform_apply_destroy }}
+    - name: Terraform Apply Destroy
+      run: terraform apply -destroy
