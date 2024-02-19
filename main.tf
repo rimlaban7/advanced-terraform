@@ -33,4 +33,6 @@ module "azure_function" {
   location            = module.resource_group.location
   resource_group_name = module.resource_group.name
   storage_account_name = var.storage_account_name
+  app_service_plan_id       = "app_service_plan_id" # will be set dynamically after apply
+  storage_account_access_key = module.azurerm_storage_account.storage_account_access_key
 }

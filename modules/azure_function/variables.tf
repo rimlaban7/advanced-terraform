@@ -46,3 +46,8 @@ variable "app_settings_run_time" {
     type = string
     default = "dotnet"
 }
+
+variable "app_service_plan_kind" {
+  type = string
+  default = "FunctionApp"
+}
