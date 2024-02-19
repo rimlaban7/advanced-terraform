@@ -9,3 +9,12 @@ variable "location" {
 variable "storage_account_name" {
     type = string
 }
+
+variable "function_name" {
+    type = string
+}
+
+variable "app_service_plan_id" {
+  type = string
+  default = "app_service_plan_id"
+}
