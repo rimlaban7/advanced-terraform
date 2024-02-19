@@ -12,11 +12,16 @@ Before you begin, you'll need to have the following:
 - A GitHub account.
 - A Terraform Cloud account, with a workspace configured and mapped to this repository.
 - Azure CLI installed locally (for development and testing).
+- Your favorite IDE - I prefer Visual Studio Code with the below extensions installed
+    - GitHub Actions
+    - HashiCorp HCL 
+    - HashiCorp Terraform
+
 
 ## Configuration
 
 ### Azure Subscription
-1. Create a service principal with `Contributor` access and configure it as a variable in Terraform Cloud.
+1. **Azure Service Principal**: Create a service principal with `Contributor` access and configure it as a variable in Terraform Cloud. You can accomplish this in Azure Portal or via Azure CLI.
 
 ### Terraform Cloud
 
