@@ -10,7 +10,7 @@ variable "rg_location" {
 
 variable "storage_account_name" {
     type = string
-    default = "terra_cloud_github_actions_storage"
+    default = "terracloudgithubactionsstorage"
 }
 
 variable "function_name" {
