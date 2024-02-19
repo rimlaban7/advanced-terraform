@@ -1,9 +1,9 @@
-variable "resource_group_name" {
+variable "rg_name" {
     type = string
     default = "terra_cloud_github_actions_rg"
 }
 
-variable "location" {
+variable "rg_location" {
   type = string
   default = "East Us"
 }

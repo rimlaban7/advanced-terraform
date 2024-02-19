@@ -23,8 +23,8 @@ provider "azurerm" {
 
 module "resource_group" {
   source   = "./modules/resource_group"
-  name     = var.resource_group_name
-  location = var.location
+  name     = var.rg_name
+  location = var.rg_location
 }
 
 module "azure_function" {
