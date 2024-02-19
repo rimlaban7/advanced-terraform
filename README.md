@@ -4,6 +4,11 @@
 
 This project demonstrates the deployment of an Azure Function App using Terraform Cloud for infrastructure as code (IaC) management and GitHub Actions for continuous integration and continuous deployment (CI/CD). The Azure Function App is designed to run serverless functions, allowing you to execute code in response to triggers without the need to manage infrastructure.
 
+
+<figure>
+    <a href="/assets/GitHub_Terraform_Azure.jpg"><img src="/assets/GitHub_Terraform_Azure.jpg"></a>
+</figure>
+
 ## Prerequisites
 
 Before you begin, you'll need to have the following:
