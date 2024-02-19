@@ -16,7 +16,7 @@ Before you begin, you'll need to have the following:
 ## Configuration
 
 ### Azure Subscription
-1. Create a service principal with "Contributor" access and configure it as a variable in Terraform Cloud.
+1. Create a service principal with `Contributor` access and configure it as a variable in Terraform Cloud.
 
 ### Terraform Cloud
 
@@ -26,5 +26,5 @@ Before you begin, you'll need to have the following:
 
 ### GitHub Actions
 
-1. **Workflow Configuration**: The `.github/workflows` directory contains the YAML files for GitHub Actions. These define the CI/CD pipeline. Changes are currently configured to only be manually deployed.  This is accomplished with a "workflow_dispatch" trigger in the GitHub actions workflows "plan-apply.yml" and "destroy.yml". 
-2. **Secrets**: Set up the required secrets in your GitHub repository variable and secrets settings. This should include access tokens for Terraform Cloud "TF_API_TOKEN".
+1. **Workflow Configuration**: The `.github/workflows` directory contains the YAML files for GitHub Actions. These define the CI/CD pipeline. Changes are currently configured to only be manually deployed.  This is accomplished with a `workflow_dispatch` trigger in the GitHub actions workflows `plan-apply.yml` and `destroy.yml`. 
+2. **Secrets**: Set up the required secrets in your GitHub repository variable and secrets settings. This should include access tokens for Terraform Cloud `TF_API_TOKEN`.
