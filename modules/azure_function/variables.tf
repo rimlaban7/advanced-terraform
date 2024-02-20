@@ -10,22 +10,8 @@ variable "resource_group_name" {
   type = string
 }
 
-variable "storage_account_name" {
-  type = string
-}
-
 variable "app_service_plan_id" {
   type = string
-}
-
-variable "account_tier" {
-    type = string
-    default = "Standard"
-}
-
-variable "account_replication_type" {
-    type = string
-    default = "LRS"
 }
 
 variable "os_type" {
@@ -46,4 +32,12 @@ variable "app_settings_run_time" {
 variable "app_service_plan_kind" {
   type = string
   default = "FunctionApp"
+}
+
+variable "storage_prefix" {
+  type = string
+}
+
+variable "environment" {
+  type = string
 }
