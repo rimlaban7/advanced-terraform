@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project demonstrates the deployment of an Azure Function App using Terraform, Terraform Cloud and GitHub Actions for CI/CD. 
+This project demonstrates the deployment of an Azure Function App using Terraform, Terraform Cloud and GitHub Actions for CI/CD. The empty running Linux Azure Function can be seen running here: https://terra-cloud-github-actions-function.azurewebsites.net/. 
 
 
 <figure>
