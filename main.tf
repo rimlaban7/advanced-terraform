@@ -8,10 +8,12 @@ terraform {
   }
 
   cloud {
-    organization = "advanced-terraform-almirb40"
+    hostname = "app.terraform.io"
+    organization = "github-azure-terraform"
 
     workspaces {
-      name = "advanced-terraform"
+      project = "azure-functions-terraform"
+      name = "azure-function-terraform"
     }
   }
 }
